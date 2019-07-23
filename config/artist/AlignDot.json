@@ -1,0 +1,23 @@
+{
+    "learning_rate": 0.00001,
+    "l2penalty": 0,
+    "vocab_file": "data/artist/artist.vocab",
+    "train_file": "data/artist/artist.train",
+    "dev_file": "data/artist/artist.dev",
+    "test_file": "data/artist/artist.test",
+    "tokenizer_name": "Char",
+    "model_name": "Stance",
+    "num_minibatches": 40000,
+    "train_batch_size": 32,
+    "dev_test_batch_size": 32,
+    "max_num_char": 60,
+    "embedding_dim": 32,
+    "rnn_hidden_dim": 32,
+    "random_seed": 2524,
+    "dropout_rate": 0.3,
+    "eval_every_minibatch": 1000,
+    "clip": 0.25,
+    "cnn_num_layers": 4,
+    "filter_counts": [25, 25, 25, 25],
+    "codec": "utf-8" 
+  }

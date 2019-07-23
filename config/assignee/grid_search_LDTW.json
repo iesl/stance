@@ -1,0 +1,22 @@
+{
+    "grid_search_fields": ["rnn_hidden_dim", "embedding_dim"],
+    "learning_rate": 0.001,
+    "l2penalty": 0,
+    "vocab_file": "data/assignee/assignee.vocab",
+    "train_file": "data/assignee/assignee.train",
+    "dev_file": "data/assignee/assignee.dev",
+    "test_file": "data/assignee/assignee.test",
+    "tokenizer_name": "Char",
+    "model_name": "LDTW",
+    "num_minibatches": 40000,
+    "train_batch_size": 16,
+    "dev_test_batch_size": 32,
+    "max_num_char": 60,
+    "embedding_dim": [64, 128],
+    "rnn_hidden_dim": [64, 128],
+    "random_seed": 2524,
+    "dropout_rate": 0.3,
+    "eval_every_minibatch": 10000,
+    "clip": 0.25,
+    "codec": "utf-8" 
+  }
