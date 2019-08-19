@@ -7,8 +7,8 @@
 **E**ncodings
 
 [Optimal Transport-based Alignment of Learned Character Representations for String Similarity](https://www.aclweb.org/anthology/P19-1592)
-Derek Tam, Nicholas Monath, Ari Kobren, Aaron Traylor, Rajarshi Das, Andrew McCallum
-ACL 2019
+Derek Tam, Nicholas Monath, Ari Kobren, Aaron Traylor, Rajarshi Das, Andrew McCallum.
+Association for Computational Linguistics (ACL). 2019.
 
 
 ## Dependencies ##
