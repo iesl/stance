@@ -45,7 +45,7 @@ First, install the baselines by running `source bin/install_baseline.sh`  (from 
 
 For each session, run `source bin/setup.sh` to set environment variables.
 
-Then, create the vocab for a dataset by running `bin/make_vocab.sh` with the training file, vocab file name, tokenizer, and miniumum count as arguments. For example, `sh bin/make_vocab.sh data/artist/artist.train data/artist/artist.vocab Char 5`.
+If running on your own dataset, create the vocab for a dataset by running `bin/make_vocab.sh` with the training file, vocab file name, tokenizer, and miniumum count as arguments. For example, `sh bin/make_vocab.sh data/artist/artist.train data/artist/artist.vocab Char 5`. Vocab files are provided for the datasets we released.
 
 \* Note creating the vocab only has to be done once per dataset.
 
