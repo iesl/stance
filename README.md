@@ -1,6 +1,15 @@
 # Stance #
+**S**imiliarity of 
+**T**ransport 
+**A**ligned 
+**N**eural 
+**C**haracter 
+**E**ncodings
 
-Paper can be found here: 
+[Optimal Transport-based Alignment of Learned Character Representations for String Similarity](https://www.aclweb.org/anthology/P19-1592)
+Derek Tam, Nicholas Monath, Ari Kobren, Aaron Traylor, Rajarshi Das, Andrew McCallum
+ACL 2019
+
 
 ## Dependencies ##
 Python 3.6\
@@ -12,7 +21,7 @@ nose
 
 ## Dataset ## 
 
-The datasets are checked into this repo using [git lfs](https://git-lfs.github.com/) 
+The datasets are checked into this repo (in [data](data)) using [git lfs](https://git-lfs.github.com/) 
 
 Training files are of the form `query \t positive \t negative`. For example, 
 ```
@@ -76,6 +85,22 @@ Then, create a script to train each model configuration in parallel by running `
 
 Finally, run the script, which wil be at `exp_out/{dataset}/{model}/{tokenizer}/{timestamp}/grid_search_config.sh`. For example, `sh exp_out/artist/Stance/Char/2019-05-30-15-08-47/grid_search_config.sh`.
 
+## Citing ##
 
+Please cite: 
+
+```
+@inproceedings{tam2019optimal,
+    title = "Optimal Transport-based Alignment of Learned Character Representations for String Similarity",
+    author = "Tam, Derek  and
+      Monath, Nicholas  and
+      Kobren, Ari  and
+      Traylor, Aaron  and
+      Das, Rajarshi  and
+      McCallum, Andrew",
+    booktitle = "Association for Computational Linguistics (ACL)",
+    year = "2019"
+}
+```
 
 
