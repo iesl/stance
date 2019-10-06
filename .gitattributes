@@ -1,8 +1,0 @@
-*.train filter=lfs diff=lfs merge=lfs -text
-*.dev filter=lfs diff=lfs merge=lfs -text
-*.test filter=lfs diff=lfs merge=lfs -text
-*.*_entities filter=lfs diff=lfs merge=lfs -text
-*.train_entities filter=lfs diff=lfs merge=lfs -text
-*.test_entities filter=lfs diff=lfs merge=lfs -text
-*.dev_entities filter=lfs diff=lfs merge=lfs -text
-*.vocab filter=lfs diff=lfs merge=lfs -text
