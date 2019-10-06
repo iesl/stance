@@ -21,7 +21,7 @@ nose
 
 ## Dataset ## 
 
-The datasets are checked into this repo (in [data](data)) using [git lfs](https://git-lfs.github.com/) 
+The datasets are at this google drive [link](https://drive.google.com/drive/folders/1LeGQWdXOwkDxVJ2UXieqbh0-ZyqraAyj) and the `data` directory should be put under the top directory `stance`
 
 Training files are of the form `query \t positive \t negative`. For example, 
 ```
