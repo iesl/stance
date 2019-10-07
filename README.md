@@ -21,7 +21,7 @@ nose
 
 ## Dataset ## 
 
-The datasets are at this google drive [link](https://drive.google.com/drive/folders/1LeGQWdXOwkDxVJ2UXieqbh0-ZyqraAyj) and the `data` directory should be put under the top directory `stance`
+The datasets are at this google drive [link](https://drive.google.com/drive/folders/1LeGQWdXOwkDxVJ2UXieqbh0-ZyqraAyj) \[Updated 9/7/19\]  and the `data` directory should be put under the top directory `stance`
 
 Training files are of the form `query \t positive \t negative`. For example, 
 ```
