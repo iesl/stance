@@ -69,11 +69,17 @@ There are two options:
 
     * For the second option, first shard the test file by running `bin/shard_test.sh` and passing in the test file and number of shards as arguments. For example, `sh bin/shard_test.sh data/disease/disease.test 10 0`.
 
-        \* Note this only has to be done once per dataset
+        \* This only has to be done once per dataset
 
-    * Then, setup a script by running `src/main/eval/setup_parallel_test.py` that will evaluate the model on each shard in parallel, passing in the experiment directory, number of shards, and gpu type as arguments. Note that the experiment directory has to be the configuration directory with the best model when using grid search. For example, `python src/main/eval/setup_parallel_test.py -e exp_out/artist/Stance/Char/2019-05-30-10-36-55 -n 10 -g 1080ti-short`
+    * Then, setup a script by running `src/main/eval/setup_parallel_test.py` that will evaluate the model on each shard in parallel, passing in the experiment directory, number of shards, and gpu type as arguments. The experiment directory has to be the configuration directory with the best model when using grid search. For example, `python src/main/eval/setup_parallel_test.py -e exp_out/artist/Stance/Char/2019-05-30-10-36-55 -n 10 -g 1080ti-short`
+    
+       \* The script assumes a slurm manager  
 
     * Finally, run the script which will be at `exp_out/{dataset}/{model}/{tokenizer}/{timestamp}/parallel_test.sh`. For example, `sh exp_out/artist/Stance/Char/2019-05-30-10-36-55/parallel_test.sh`. 
+    
+3) Calculate the score on the shards
+   
+   * Run `src/main/eval/score_shards.py`. The experiment directory has to be the same experiment directory passed into `src/main/eval/setup_parallel_test.py` earlier. For example, `python src/main/eval/score_shards.py -e exp_out/artist/Stance/Char/2019-05-30-10-36-55` The test scores will appear in `exp_out/{dataset}/{model}/{tokenizer}/{timestamp}/test_scores.json` 
 
 ## Grid Search Train Models ##
 
@@ -81,7 +87,7 @@ First, create a grid search config JSON file (sample file at `config/artist/grid
 
 Then, create a script to train each model configuration in parallel by running `src/main/setup/setup_grid_search_train.py` with the grid search config file and gpu type as arguments. For example, `python src/main/setup/setup_grid_search_train.py -c config/artist/grid_search_STANCE.json -g gpu`.
 
-\* Note the script assumes a slurm manager 
+\* The script assumes a slurm manager 
 
 Finally, run the script, which wil be at `exp_out/{dataset}/{model}/{tokenizer}/{timestamp}/grid_search_config.sh`. For example, `sh exp_out/artist/Stance/Char/2019-05-30-15-08-47/grid_search_config.sh`.
 
