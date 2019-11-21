@@ -1,0 +1,17 @@
+stance 
+
+This software is Copyright (C) 2019 University of Massachusetts
+Amherst, College of Information and Computer Sciences, and is licensed under the
+terms of the Apache License, Version 2.0 (see LICENSE.txt) or (at your option) any subsequent version.
+
+The license is approved by the Open Source Initiative, and is available
+from their website at http://www.opensource.org.
+
+THIRD PARTY COMPONENTS
+  
+learned-string-alignments is Copyright (C) 2017-2018 University of Massachusetts
+Amherst, College of Information and Computer Sciences, and is licensed under the
+terms of the Apache License, Version 2.0 (see LICENSE.txt) or (at your option) any subsequent version.
+
+A modified version of https://github.com/gpeyre/SinkhornAutoDiff Copyright (c) 2017 Noria's team
+in https://github.com/iesl/stance/blob/master/src/main/objects/Sinkhorn.py
